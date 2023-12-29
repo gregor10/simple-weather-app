@@ -19,7 +19,7 @@ export default function RootLayout({ children }: {
   return (
     <html lang='en'>
     <body
-      className={cn(inter.className, 'h-[100vh] bg-gradient-radial from-white to-cyan-200')}>
+      className={cn(inter.className, 'min-h-[100vh] bg-gradient-radial from-white to-cyan-200 py-3')}>
       <AppProviders>
         {children}
       </AppProviders>

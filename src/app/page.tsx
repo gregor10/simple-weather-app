@@ -40,7 +40,7 @@ const WeatherMain: React.FC = () => {
   const shouldShowError = !isLoading && error && (!location.latitude || !location.longitude)
 
   return (
-    <div className='flex items-center justify-center h-[inherit] px-3'>
+    <div className='flex md:items-center justify-center min-h-[inherit] px-3'>
       <div className='w-[400px]'>
         <div className='mb-4'>
           <LocationAutocomplete onChange={onAutocompleteChange} />
